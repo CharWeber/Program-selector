@@ -1,39 +1,40 @@
-# _{Application Name}_
+# _Programming Language Slector_
 
-#### _{Brief description of application}_
+#### _Quiz deisgned to suggest a programming language to new web developers_
 
-#### By _**{List of contributors}**_
+#### By _*Charles T Weber*_
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Javascript_
+* _Jquery 3.6.0_
+* _Bootstrap_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This website is designed to suggest programming languages to those interested in diving into Web development. There are 5 somewhat irrelevent questions that gather info and send it through a js tree to determine which language to recommend. Along with each recommendation is a list of links where the user can find more information specific to the language. There is also a sidebar with more general resources on getting started. While the quiz may be ... humourous... the information is meant to encourage and educate the user_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Open terminal or equivalent program_
+* _use git to clone repo to desktop: https://github.com/CharWeber/Program-selector_
+* _open directory and launch index.html with any web browser_
+* _Participate in quiz to see results_
+* _Without an internet connection the links will not work_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _When the page is shrunk down width wise the col and rows collapse on top of each other_
+* _the width of the range bar is fixed, I was hoping to have it fit the card but I couldn't sus that bug out yet_
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_MIT (c) Charles T Weber 2021_
+_please feel free to clone and make changes as you see fit, if something interesting comes up or you wish to share please contact the creators_
 
 ## Contact Information
 
-_{Add your contact information here.}_
+_charlestweber@gmail.com_
