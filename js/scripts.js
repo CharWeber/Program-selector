@@ -15,36 +15,36 @@ $(document).ready(function(){
     const cheese = $("select#cheese").val();
     $("#langMatch").show();
 
-    if (snake === yesSnake){
-      $("#langName").text("Python!")
+    if (snake === "yesSnake"){
+      $("#langName").text("Python!");
     }
-    else if (cheese === sharpCheese){
-      $("#langName").text("C#!")
+    else if (cheese === "sharpCheese"){
+      $("#langName").text("C#!");
     }
     else if (speed >= 50){
-      if (cof === water){
-        if (rain === Y || rain === both){
-          $("#langName").text("Rust!")
+      if (cof === "water"){
+        if (rain === "Y" || rain === "both"){
+          $("#langName").text("Rust!");
         }
         else{
-          $("#langName").text("Ruby!")
+          $("#langName").text("Ruby!");
         }
       }
-      else (cof === dark || cof === cream) {
-        if (rain === N) {
-          $("#langName").text("Javascript!")
+      else  {
+        if (rain === "N") {
+          $("#langName").text("GO!");
         }
         else {
-          $("#langName").text("GO!")
+          $("#langName").text("Javascript!");
         }
       }
     }
-    else (speed < 50) {
-      if (rain === Y || rain === both){
-        $("#langName").text("Ruby")
+    else  {
+      if (rain === "Y" || rain === "both"){
+        $("#langName").text("Ruby!");
       }
       else {
-        $("#langName").text("Swift")
+        $("#langName").text("Swift!");
       }
     }
 
