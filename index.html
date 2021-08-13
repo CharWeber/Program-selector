@@ -8,205 +8,228 @@
   <title>Which Programming Language?</title>
 </head>
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h3>Which programming language is fit for you?</h3>
-      <h4>Take this quiz to help narrow it down</h4>
-      <hr>
-      <h5><strong>Don't worry!</strong><br><em>You'll have to learn ALL of them eventually!</em></h5>
-    </div>
-    <form id="langTest">
-      <div class="card form-group">
-        <label for="rain"><h6>Do you like rain?</h6></label>
-        <select class="form-control" id="rain">
-          <option selected disabled>rain?</option>
-          <option value="Y">Yes!</option>
-          <option value="N">No!</option>
-          <option value="both">Its a complicated relationship</option>
-        </select>
-      </div>
-      <div class="card form-group">
-        <div class="radio">
-          <h6>Did you drink coffee this morning</h6>
-          <label>
-            <input id="coffee" type="radio" name="coffee" value="dark"> Dark Roast
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="coffee" type="radio" name="coffee" value="cream"> Iced Caramel Frappé all day!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="coffee" type="radio" name="coffee" value="water"> I prefer water...
-          </label>
-        </div>
-      </div>
-      <div class="card form-group">
-        <div class="center">
-        <label for="speed"><h6>How fast are you?</h6>
-          <input class="slider-width" id="fast" type="range" min="0" max="100" value="50">
-        </label>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <p class="text-center">Not very fast</p>
-          </div>
-          <div class="col-6">
-            <p class="text-center"><em>So Fast</em></p>
-          </div>
-        </div>
-      </div>
-      <div class="card form-group">
-        <div class=radio>
-          <h6>How do you feel about snakes?</h6>
-          <label>
-            <input id="snake" type="radio" name="snake" value="yesSnake">Love those wigglers
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input id="snake" type="radio" name="snake" value="noSnake">No, thank you.
-            </label>
-        </div>
-      </div>
-      <div class="card form-group">
-        <label for="sharp"><h6>How sharp is this?</h6></label>
-        <div class="row">
-          <div class="col-4">
-          </div>
-          <div class="col-4">
-            <img class="shrink" src="img/sharp-cheese.jpg" alt="debatably sharp cheese">
-          </div>
-          <div class="col-4">
-          </div>
-        </div>
-
-        <br>
-        <select class="form-control" id="cheese">
-          <option selected disabled>sharp?</option>
-          <option value="sharpCheese">Extra Sharp</option>
-          <option value="dullCheese">I can't cut anything with this cheese!</option>
-        </select>
-      </div>
-      <a href="resultAnchor">
-      <button class="btn btn-dark" type="submit">Which language?</button>
-      </a>
-    </form>
-    <div id="langMatch">
-      <div class="card">
-        <p>We've determined your ideal starting language is <span id="langName"></span></p>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <div class="jumbotron">
+        <h3>Which programming language is fit for you?</h3>
+        <h4>Find out here!</h4>
+        <hr>
+        <h5><em>You'll have to learn <strong>ALL</strong> of them eventually!</em></h5>
       </div>
     </div>
-    <div id="resultAnchor"></div>
-    <div id="python" class="card">
-      <h2>Python</h2>
-      <div class="row">
-        <div class="col-9">
-          <p> If you love snakes there is no better place to start than python! First appearing in 1991, Guido van Rossum delivered python as the successor to the ABC programming language. Python consistently ranks among the most popular of programming languages. check out how to get started with these links!</p>
-        </div>
-        <div class="col-3">
-          <ul>
-            <li><a href="https://www.python.org/">Main site</a></li>
-            <li><a href="https://www.python.org/about/gettingstarted/">For Beginners</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="ruby" class="card">
-      <h2>Ruby</h2>
-      <div class="row">
-        <div class="col-9">
-          <p> Not so fast are you? you must be taking your time because you are creating <em>BEAUTIFUL RUBIES</em>.Designed by yukihiro Matsumoto, Ruby is a interpreted, high-level-general-purpose programming language.Often compared to python, Matsumoto deisgned ruby for order to improve programmer productivity and most imposrtantly improve programming fun! Check out these links to get started!</p>
-        </div>
-        <div class="col-3">
-          <ul>
-            <li><a href="https://www.ruby-lang.org/en/">Main Site</a></li>
-            <li><a href="http://ruby-for-beginners.rubymonstas.org/">Ruby for Beginners</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Wikipedia</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="cSharp" class="card">
-      <h2>cSharp</h2>
-      <div class="row">
-        <div class="col-9">
-          <p>That Cheese is <em>VERY</em> sharp! Although the "C" in "C#" does not stand for cheese I like to pretend it does. First developed by Microsoft in the year 2000 as a part of its .net initiative C# has evolved through the years with the latest update coming out in 2020. Our own VScode uses C# (as well as a bunch of other languages). Check out these links to learn more!</p>
-        </div>
-        <div class="col-3">
-          <ul>
-            <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Main Documentation</a></li>
-            <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/">C# for Beginners</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">Wikipedia</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="java" class="card">
-      <h2>Javascript</h2>
-      <div class="row">
-        <div class="col-9">
-          <p>So coffee on a slow rainy day is your jam? Why not give JAvascript a try with your Java bean Frappé. Javascript is one of the core technologies of the internet and essential to understand in any and all webdevelopment. Its first appearence was in 1995 by Brendan Eich, since then countless programmers have added to the growth of Javascript. Check out these links and you can start your own contributions!</p>
-        </div>
-        <div class="col-3">
-          <ul>
-            <li><a href="https://www.javascript.com/">Main site</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">Javascript for Beginners</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="go" class="card">
-      <h2>GO!</h2>
-      <div class="row">
-        <div class="col-9">
-          <p>You like FAST, DRY, AND COFFEE FUELED SPEED! its time to GO GO GO! Go programming was developed by Google in 2009. Often refered to as Golang because of its domain name golang.org. Two Robs and Ken had two major implemations for GO. First a Self-hosting compiler toolchain targeting multiple OS' and gofrontend, a frontend to other compilers. To understand that check out these links!</p>
-        </div>
-        <div class="col-3">
-          <ul>
-            <li><a href="https://en.wikipedia.org/wiki/JavaScript">Main site</a></li>
-            <li><a href="https://www.educative.io/blog/golang-tutorial">Go for beginners</a>></li>
-            <li><a href="https://en.wikipedia.org/wiki/Go_(programming_language)">Wikipedia</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="rust" class="card">
-      <h2>Rust</h2>
-      <div class="row">
-        <div class="col-9">
-          <p>Water and Rain? sounds like and computers left outside might get...RUST on them! (git it?) Rust is a general-purpose programming language designed for performence and safety by Graydon Hoare in 2010.Rust has been voted the "most loved programming language" in stack overflow since 2016! Get started with these links to start shaking the rust off!</p>
-        </div>
-        <div class="col-3">
-          <ul>
-            <li><a href="https://www.rust-lang.org/">main site</a>></li>
-            <li><a href="https://www.rust-lang.org/learn">Rust for Beginners</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Wikipedia</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div id="swift" class="card">
-      <h2>Swift</h2>
-      <div class="row">
-        <div class="col-9">
-          <p>not so quick, but Dry conditions and lots of coffee let you move SWIFTLY! Developed by Apple and the greater open-source community in 2014, Swift is intened to supoprt many core concepts associated with Objective-C, notably dynamic dispatch, widespread late binding, extensible programming and many more. To start learning swift's details checkout the links!</p>
-        </div>
-        <div class="col-3">
-          <ul>
-            <li><a href="https://swift.org/">Main site</a></li>
-            <li><a href="https://www.codecademy.com/learn/learn-swift">swift for beginners</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Swift_(programming_language)">Wikipedia</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- this is where the new card goes charlie. ABOVE THIS LINE -->
+    <div class="col-1"></div>
   </div>
-  
+  <div class="row">
+    <div class="col-2">
+      <div class="card" id="sidebar">
+        <h6>Common resources</h6>
+        <hr>
+        <ul>
+          <li><a href="https://www.epicodus.com/">Epicodus</a></li>
+          <li><a href="https://www.codecademy.com/">Code Academy</a></li>
+          <li><a href="https://www.theodinproject.com/">Project Odin</a></li>
+          <li><a href="https://github.com/">Github</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="container">
+        <form id="langTest">
+          <div class="card form-group">
+            <label for="rain"><h6>Do you like rain?</h6></label>
+            <select class="form-control" id="rain">
+              <option selected disabled>rain?</option>
+              <option value="Y">Yes!</option>
+              <option value="N">No!</option>
+              <option value="both">Its a complicated relationship</option>
+            </select>
+          </div>
+          <div class="card form-group">
+            <div class="radio">
+              <h6>Did you drink coffee this morning</h6>
+              <label>
+                <input id="coffee" type="radio" name="coffee" value="dark"> Dark Roast
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="coffee" type="radio" name="coffee" value="cream"> Iced Caramel Frappé all day!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="coffee" type="radio" name="coffee" value="water"> I prefer water...
+              </label>
+            </div>
+          </div>
+          <div class="card form-group">
+            <div class="center">
+            <label for="speed"><h6>How fast are you?</h6>
+              <input class="slider-width" id="fast" type="range" min="0" max="100" value="50">
+            </label>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <p class="text-center">Not very fast</p>
+              </div>
+              <div class="col-6">
+                <p class="text-center"><em>So Fast</em></p>
+              </div>
+            </div>
+          </div>
+          <div class="card form-group">
+            <div class=radio>
+              <h6>How do you feel about snakes?</h6>
+              <label>
+                <input id="snake" type="radio" name="snake" value="yesSnake">Love those wigglers
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input id="snake" type="radio" name="snake" value="noSnake">No, thank you.
+                </label>
+            </div>
+          </div>
+          <div class="card form-group">
+            <label for="sharp"><h6>How sharp is this?</h6></label>
+            <div class="row">
+              <div class="col-4">
+              </div>
+              <div class="col-4">
+                <img class="shrink" src="img/sharp-cheese.jpg" alt="debatably sharp cheese">
+              </div>
+              <div class="col-4">
+              </div>
+            </div>
+
+            <br>
+            <select class="form-control" id="cheese">
+              <option selected disabled>sharp?</option>
+              <option value="sharpCheese">Extra Sharp</option>
+              <option value="dullCheese">I can't cut anything with this cheese!</option>
+            </select>
+          </div>
+          <a href="resultAnchor">
+          <button class="btn btn-dark" type="submit">Which language?</button>
+          </a>
+        </form>
+        <div id="langMatch">
+          <div class="card">
+            <p>We've determined your ideal starting language is <span id="langName"></span></p>
+          </div>
+        </div>
+        <div id="resultAnchor"></div>
+        <div id="python" class="card">
+          <h2>Python</h2>
+          <div class="row">
+            <div class="col-9">
+              <p> If you love snakes there is no better place to start than python! First appearing in 1991, Guido van Rossum delivered python as the successor to the ABC programming language. Python consistently ranks among the most popular of programming languages. check out how to get started with these links!</p>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li><a href="https://www.python.org/">Main site</a></li>
+                <li><a href="https://www.python.org/about/gettingstarted/">For Beginners</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Wikipedia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="ruby" class="card">
+          <h2>Ruby</h2>
+          <div class="row">
+            <div class="col-9">
+              <p> Not so fast are you? you must be taking your time because you are creating <em>BEAUTIFUL RUBIES</em>.Designed by yukihiro Matsumoto, Ruby is a interpreted, high-level-general-purpose programming language.Often compared to python, Matsumoto deisgned ruby for order to improve programmer productivity and most imposrtantly improve programming fun! Check out these links to get started!</p>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li><a href="https://www.ruby-lang.org/en/">Main Site</a></li>
+                <li><a href="http://ruby-for-beginners.rubymonstas.org/">Ruby for Beginners</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">Wikipedia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="cSharp" class="card">
+          <h2>cSharp</h2>
+          <div class="row">
+            <div class="col-9">
+              <p>That Cheese is <em>VERY</em> sharp! Although the "C" in "C#" does not stand for cheese I like to pretend it does. First developed by Microsoft in the year 2000 as a part of its .net initiative C# has evolved through the years with the latest update coming out in 2020. Our own VScode uses C# (as well as a bunch of other languages). Check out these links to learn more!</p>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Main Documentation</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/">C# for Beginners</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">Wikipedia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="java" class="card">
+          <h2>Javascript</h2>
+          <div class="row">
+            <div class="col-9">
+              <p>So coffee on a slow rainy day is your jam? Why not give JAvascript a try with your Java bean Frappé. Javascript is one of the core technologies of the internet and essential to understand in any and all webdevelopment. Its first appearence was in 1995 by Brendan Eich, since then countless programmers have added to the growth of Javascript. Check out these links and you can start your own contributions!</p>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li><a href="https://www.javascript.com/">Main site</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">Javascript for Beginners</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="go" class="card">
+          <h2>GO!</h2>
+          <div class="row">
+            <div class="col-9">
+              <p>You like FAST, DRY, AND COFFEE FUELED SPEED! its time to GO GO GO! Go programming was developed by Google in 2009. Often refered to as Golang because of its domain name golang.org. Two Robs and Ken had two major implemations for GO. First a Self-hosting compiler toolchain targeting multiple OS' and gofrontend, a frontend to other compilers. To understand that check out these links!</p>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/JavaScript">Main site</a></li>
+                <li><a href="https://www.educative.io/blog/golang-tutorial">Go for beginners</a>></li>
+                <li><a href="https://en.wikipedia.org/wiki/Go_(programming_language)">Wikipedia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="rust" class="card">
+          <h2>Rust</h2>
+          <div class="row">
+            <div class="col-9">
+              <p>Water and Rain? sounds like and computers left outside might get...RUST on them! (git it?) Rust is a general-purpose programming language designed for performence and safety by Graydon Hoare in 2010.Rust has been voted the "most loved programming language" in stack overflow since 2016! Get started with these links to start shaking the rust off!</p>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li><a href="https://www.rust-lang.org/">main site</a>></li>
+                <li><a href="https://www.rust-lang.org/learn">Rust for Beginners</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Wikipedia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="swift" class="card">
+          <h2>Swift</h2>
+          <div class="row">
+            <div class="col-9">
+              <p>not so quick, but Dry conditions and lots of coffee let you move SWIFTLY! Developed by Apple and the greater open-source community in 2014, Swift is intened to supoprt many core concepts associated with Objective-C, notably dynamic dispatch, widespread late binding, extensible programming and many more. To start learning swift's details checkout the links!</p>
+            </div>
+            <div class="col-3">
+              <ul>
+                <li><a href="https://swift.org/">Main site</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-swift">swift for beginners</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Swift_(programming_language)">Wikipedia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- this is where the new card goes charlie. ABOVE THIS LINE -->
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <!-- this is where the side bar div should be, above this line -->
 </body>
 </html>

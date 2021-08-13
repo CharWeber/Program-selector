@@ -40,11 +40,17 @@ a{
   margin:5px;
   padding:10px;
   background-color:rgba(90, 180, 110, 0.822);
+  box-sizing: border-box;
+}
+#sidebar{
+  background-color:rgba(90, 180, 110, 0.973);
+  position:fixed;
 }
 .jumbotron{
   background-color: rgb(65, 82, 49);
   text-align: center;
   padding-bottom:20px;
+  padding-top: 30px;
 }
 img {
   border-style: solid;
