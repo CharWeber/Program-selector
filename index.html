@@ -54,8 +54,26 @@
             </div>
           </div>
         </div>
+        <div class="form-group">
+          <div class=radio>
+            <p>Lastly, how do you feel about snakes?</p>
+            <label>
+              <input id="snake" type="radio" name="snake" value="yesSnake">Love those wigglers
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="snake" type="radio" name="snake" value="noSnake">No, thank you.
+              </label>
+          </div>
+        </div>
         <button class="btn btn-success" type="submit">Which language?</button>
       </form>
+      <div id="langMatch">
+        <div class="card">
+          <p>We've determined your ideal starting language is <span id="langName"></span>.</p>
+        </div>
+      </div>
     </div>
   </div>
   
