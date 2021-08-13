@@ -14,9 +14,16 @@ $(document).ready(function(){
     const snake = $("input:radio[name=snake]:checked").val();
     const cheese = $("select#cheese").val();
     $("#langMatch").show();
+    $("#python").hide();
+    $("#ruby").hide();
+    $("#java").hide();
+    $("#cSharp").hide();
+    $("#go").hide();
+    $("#swift").hide();
 
     if (snake === "yesSnake"){
       $("#langName").text("Python!");
+      $("#python").show();
     }
     else if (cheese === "sharpCheese"){
       $("#langName").text("C#!");
@@ -28,6 +35,7 @@ $(document).ready(function(){
         }
         else{
           $("#langName").text("Ruby!");
+          $("#ruby").show();
         }
       }
       else  {

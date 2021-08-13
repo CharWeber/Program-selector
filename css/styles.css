@@ -40,3 +40,25 @@ body{
   background-color: rgba(0, 36, 0, 0.788);
   color:white;
 }
+#langName{
+  background-color: rgb(78, 6, 6);
+  font-style: italic;
+}
+#python{
+  display:none;
+}
+#ruby{
+  display:none;
+}
+#cSharp{
+  display:none;
+}
+#go{
+  display:none;
+}
+#swift{
+  display:none;
+}
+#java{
+  display:none;
+}
