@@ -20,6 +20,7 @@ $(document).ready(function(){
     $("#cSharp").hide();
     $("#go").hide();
     $("#swift").hide();
+    $("rust").hide();
 
     if (snake === "yesSnake"){
       $("#langName").text("Python!");
@@ -27,11 +28,13 @@ $(document).ready(function(){
     }
     else if (cheese === "sharpCheese"){
       $("#langName").text("C#!");
+      $("#cSharp").show();
     }
     else if (speed >= 50){
       if (cof === "water"){
         if (rain === "Y" || rain === "both"){
           $("#langName").text("Rust!");
+          $("rust").show();
         }
         else{
           $("#langName").text("Ruby!");
@@ -41,22 +44,24 @@ $(document).ready(function(){
       else  {
         if (rain === "N") {
           $("#langName").text("GO!");
+          $("#go").show();
         }
         else {
           $("#langName").text("Javascript!");
+          $("#java").show();
         }
       }
     }
     else  {
       if (rain === "Y" || rain === "both"){
         $("#langName").text("Ruby!");
+        $("#ruby").show();
       }
       else {
         $("#langName").text("Swift!");
+        $("#swift").hide();
       }
     }
-
-    
 
   });
 });
