@@ -7,3 +7,11 @@
 .text-right {
   text-align:right;
 }
+#langMatch{
+  display:none;
+}
+.shrink{
+  width:300px;
+  height:auto;
+  display:block;
+}
