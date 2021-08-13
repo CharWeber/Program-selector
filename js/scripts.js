@@ -20,7 +20,7 @@ $(document).ready(function(){
     $("#cSharp").hide();
     $("#go").hide();
     $("#swift").hide();
-    $("rust").hide();
+    $("#rust").hide();
 
     if (snake === "yesSnake"){
       $("#langName").text(" Python! ");
@@ -36,7 +36,7 @@ $(document).ready(function(){
       if (cof === "water"){
         if (rain === "Y" || rain === "both"){
           $("#langName").text(" Rust! ");
-          $("rust").show();
+          $("#rust").show();
           document.getElementById("resultAnchor").scrollIntoView();
         }
         else{

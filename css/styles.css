@@ -47,7 +47,7 @@ a{
   position:fixed;
 }
 .jumbotron{
-  background-color: rgb(65, 82, 49);
+  background-color: rgba(90, 180, 110, 0.973);
   text-align: center;
   padding-bottom:20px;
   padding-top: 30px;
