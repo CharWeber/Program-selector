@@ -1,6 +1,6 @@
-# _Programming Language Slector_
+# _Programming Language Selector_
 
-#### _Quiz deisgned to suggest a programming language to new web developers_
+#### _Quiz designed to suggest a programming language to new web developers_
 
 #### By _*Charles T Weber*_
 
