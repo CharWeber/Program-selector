@@ -1,5 +1,6 @@
 .slider-width {
-  width: 680px;
+  width: 650px;
+  align-items: center;
 }
 .text-left {
   text-align:left;
@@ -13,5 +14,29 @@
 .shrink{
   width:300px;
   height:auto;
-  display:block;
+}
+.floatr{
+  float: right;
+}
+.card{
+  margin:5px;
+  padding:10px;
+  background-color:rgba(90, 180, 110, 0.822);
+}
+.jumbotron{
+  background-color: rgb(65, 82, 49);
+  text-align: center;
+}
+img {
+  border-style: solid;
+  border-color: black;
+}
+body{
+  background-image: url("https://ze-robot.com/images/source/28512.jpg");
+  background-color: #cccccc;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.container{
+  background-color: rgba(0, 36, 0, 0.788);
+  color:white;
 }

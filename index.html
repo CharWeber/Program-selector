@@ -9,79 +9,90 @@
 </head>
 <body>
   <div class="container">
-    <h1>Which programming language is fit for you?</h1>
-    <h4>chossing a language can be a very hard decision. take this quiz to help narrow it down!</h4>
-    <h5>don't worry, You'll have to learn <em>ALL of them</em> eventually!</h5>
-    <div class=card>
-      <form id="langTest">
-        <div class="form-group">
-          <label for="rain">do you like the rain?</label>
-          <select class="form-control" id="rain">
-            <option selected disabled>rain?</option>
-            <option value="Y">Yes!</option>
-            <option value="N">No!</option>
-            <option value="both">Its a complicated relationship</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <div class="radio">
-            <p>Did you drink coffee this morning</p>
-            <label>
-              <input id="coffee" type="radio" name="coffee" value="dark"> Dark Roast
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input id="coffee" type="radio" name="coffee" value="cream"> Iced Caramel Frappé all day!
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input id="coffee" type="radio" name="coffee" value="water"> I prefer water...
-            </label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="speed">How fast are you?
-            <input class="slider-width" id="fast" type="range" min="0" max="100" value="50">
+    <div class="jumbotron">
+      <h3>Which programming language is fit for you?</h3>
+      <h4>Take this quiz to help narrow it down!</h4>
+      <hr>
+      <h5>don't worry, You'll have to learn <em>ALL of them</em> eventually!</h5>
+    </div>
+    <form id="langTest">
+      <div class="card form-group">
+        <label for="rain"><h6>Do you like rain?</h6></label>
+        <select class="form-control" id="rain">
+          <option selected disabled>rain?</option>
+          <option value="Y">Yes!</option>
+          <option value="N">No!</option>
+          <option value="both">Its a complicated relationship</option>
+        </select>
+      </div>
+      <div class="card form-group">
+        <div class="radio">
+          <h6>Did you drink coffee this morning</h6>
+          <label>
+            <input id="coffee" type="radio" name="coffee" value="dark"> Dark Roast
           </label>
-          <div class="row">
-            <div class="col-6">
-              <p class="text-left">Not very fast</p>
-            </div>
-            <div class="col-6">
-              <p class="text-right">So Fast</p>
-            </div>
+        </div>
+        <div class="radio">
+          <label>
+            <input id="coffee" type="radio" name="coffee" value="cream"> Iced Caramel Frappé all day!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input id="coffee" type="radio" name="coffee" value="water"> I prefer water...
+          </label>
+        </div>
+      </div>
+      <div class="card form-group">
+        <label for="speed"><h6>How fast are you?</h6>
+          <input class="slider-width" id="fast" type="range" min="0" max="100" value="50">
+        </label>
+        <div class="row">
+          <div class="col-6">
+            <p class="text-left">Not very fast</p>
+          </div>
+          <div class="col-6">
+            <p class="text-right"><em>So Fast</em></p>
           </div>
         </div>
-        <div class="form-group">
-          <div class=radio>
-            <p>How do you feel about snakes?</p>
-            <label>
-              <input id="snake" type="radio" name="snake" value="yesSnake">Love those wigglers
+      </div>
+      <div class="card form-group">
+        <div class=radio>
+          <h6>How do you feel about snakes?</h6>
+          <label>
+            <input id="snake" type="radio" name="snake" value="yesSnake">Love those wigglers
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input id="snake" type="radio" name="snake" value="noSnake">No, thank you.
             </label>
+        </div>
+      </div>
+      <div class="card form-group">
+        <label for="sharp"><h6>How sharp is this?</h6></label>
+        <div class="row">
+          <div class="col-4">
           </div>
-          <div class="radio">
-            <label>
-              <input id="snake" type="radio" name="snake" value="noSnake">No, thank you.
-              </label>
+          <div class="col-4">
+            <img class="shrink" src="img/sharp-cheese.jpg" alt="debatably sharp cheese">
+          </div>
+          <div class="col-4">
           </div>
         </div>
-        <div class="form-group">
-          <label for="sharp">How sharp is this?</label>
-          <img class="shrink" src="img/sharp-cheese.jpg" alt="debatably sharp cheese">
-          <select class="form-control" id="cheese">
-            <option selected disabled>sharp?</option>
-            <option value="sharpCheese">Extra Sharp</option>
-            <option value="dullCheese">I can't cut anything with this cheese!</option>
-          </select>
-        </div>
-        <button class="btn btn-success" type="submit">Which language?</button>
-      </form>
-      <div id="langMatch">
-        <div class="card">
-          <p>We've determined your ideal starting language is <span id="langName"></span>.</p>
-        </div>
+
+        <br>
+        <select class="form-control" id="cheese">
+          <option selected disabled>sharp?</option>
+          <option value="sharpCheese">Extra Sharp</option>
+          <option value="dullCheese">I can't cut anything with this cheese!</option>
+        </select>
+      </div>
+      <button class="btn btn-dark" type="submit">Which language?</button>
+    </form>
+    <div id="langMatch">
+      <div class="card">
+        <p>We've determined your ideal starting language is <span id="langName"></span></p>
       </div>
     </div>
   </div>
