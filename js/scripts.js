@@ -25,30 +25,36 @@ $(document).ready(function(){
     if (snake === "yesSnake"){
       $("#langName").text(" Python! ");
       $("#python").show();
+      document.getElementById("resultAnchor").scrollIntoView();
     }
     else if (cheese === "sharpCheese"){
       $("#langName").text(" C#! ");
       $("#cSharp").show();
+      document.getElementById("resultAnchor").scrollIntoView();
     }
     else if (speed >= 50){
       if (cof === "water"){
         if (rain === "Y" || rain === "both"){
           $("#langName").text(" Rust! ");
           $("rust").show();
+          document.getElementById("resultAnchor").scrollIntoView();
         }
         else{
           $("#langName").text(" Ruby! ");
           $("#ruby").show();
+          document.getElementById("resultAnchor").scrollIntoView();
         }
       }
       else  {
         if (rain === "N") {
           $("#langName").text(" GO! ");
           $("#go").show();
+          document.getElementById("resultAnchor").scrollIntoView();
         }
         else {
           $("#langName").text("Javascript!");
           $("#java").show();
+          document.getElementById("resultAnchor").scrollIntoView();
         }
       }
     }
@@ -56,10 +62,12 @@ $(document).ready(function(){
       if (rain === "Y" || rain === "both"){
         $("#langName").text(" Ruby! ");
         $("#ruby").show();
+        document.getElementById("resultAnchor").scrollIntoView();
       }
       else {
         $("#langName").text(" Swift! ");
         $("#swift").show();
+        document.getElementById("resultAnchor").scrollIntoView();
       }
     }
 
