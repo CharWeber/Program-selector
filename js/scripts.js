@@ -23,27 +23,27 @@ $(document).ready(function(){
     $("rust").hide();
 
     if (snake === "yesSnake"){
-      $("#langName").text("Python!");
+      $("#langName").text(" Python! ");
       $("#python").show();
     }
     else if (cheese === "sharpCheese"){
-      $("#langName").text("C#!");
+      $("#langName").text(" C#! ");
       $("#cSharp").show();
     }
     else if (speed >= 50){
       if (cof === "water"){
         if (rain === "Y" || rain === "both"){
-          $("#langName").text("Rust!");
+          $("#langName").text(" Rust! ");
           $("rust").show();
         }
         else{
-          $("#langName").text("Ruby!");
+          $("#langName").text(" Ruby! ");
           $("#ruby").show();
         }
       }
       else  {
         if (rain === "N") {
-          $("#langName").text("GO!");
+          $("#langName").text(" GO! ");
           $("#go").show();
         }
         else {
@@ -54,12 +54,12 @@ $(document).ready(function(){
     }
     else  {
       if (rain === "Y" || rain === "both"){
-        $("#langName").text("Ruby!");
+        $("#langName").text(" Ruby! ");
         $("#ruby").show();
       }
       else {
-        $("#langName").text("Swift!");
-        $("#swift").hide();
+        $("#langName").text(" Swift! ");
+        $("#swift").show();
       }
     }
 

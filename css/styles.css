@@ -1,12 +1,30 @@
+html{
+  scroll-behavior: smooth;
+}
 .slider-width {
-  width: 650px;
-  align-items: center;
+  width: 600px;
+  
+}
+ul{
+  list-style-type:square;
+  color:rgb(3, 2, 2);
+}
+a{
+  color:rgb(126, 14, 2);
+  text-decoration: underline;
+}
+.center{
+  margin:auto;
+  padding:10px;
 }
 .text-left {
   text-align:left;
 }
 .text-right {
   text-align:right;
+}
+.text-center{
+  text-align:center;
 }
 #langMatch{
   display:none;
@@ -26,6 +44,7 @@
 .jumbotron{
   background-color: rgb(65, 82, 49);
   text-align: center;
+  padding-bottom:20px;
 }
 img {
   border-style: solid;
@@ -64,4 +83,9 @@ body{
 }
 #rust{
   display:none;
+}
+h6{
+  width:fit-content;
+  text-decoration: underline;
+  font-size: 20px;
 }

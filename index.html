@@ -11,7 +11,7 @@
   <div class="container">
     <div class="jumbotron">
       <h3>Which programming language is fit for you?</h3>
-      <h4>Take this quiz to help narrow it down!</h4>
+      <h4>Take this quiz to help narrow it down</h4>
       <hr>
       <h5><strong>Don't worry!</strong><br><em>You'll have to learn ALL of them eventually!</em></h5>
     </div>
@@ -44,15 +44,17 @@
         </div>
       </div>
       <div class="card form-group">
+        <div class="center">
         <label for="speed"><h6>How fast are you?</h6>
           <input class="slider-width" id="fast" type="range" min="0" max="100" value="50">
         </label>
+        </div>
         <div class="row">
           <div class="col-6">
-            <p class="text-left">Not very fast</p>
+            <p class="text-center">Not very fast</p>
           </div>
           <div class="col-6">
-            <p class="text-right"><em>So Fast</em></p>
+            <p class="text-center"><em>So Fast</em></p>
           </div>
         </div>
       </div>
@@ -88,13 +90,16 @@
           <option value="dullCheese">I can't cut anything with this cheese!</option>
         </select>
       </div>
+      <a href="resultAnchor">
       <button class="btn btn-dark" type="submit">Which language?</button>
+      </a>
     </form>
     <div id="langMatch">
       <div class="card">
         <p>We've determined your ideal starting language is <span id="langName"></span></p>
       </div>
     </div>
+    <div id="resultAnchor"></div>
     <div id="python" class="card">
       <h2>Python</h2>
       <div class="row">
