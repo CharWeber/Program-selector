@@ -5,9 +5,59 @@
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/scripts.js"></script>
-  <title>Document</title>
-</head>
+  <title>Which Programming Language?</title>
+</head>ß
 <body>
+  <div class="container">
+    <h1>Which programming language is fit for you?</h1>
+    <h4>chossing a language can be a very hard decision. take this quiz to help narrow it down!</h4>
+    <h5>don't worry, You'll have to learn <em>ALL of them</em> eventually!</h5>
+    <div class=card>
+      <form id="langTest">
+        <div class="form-group">
+          <label for="input1">do you like the rain?</label>
+          <select class="form-control" id="rain">
+            <option selected disabled></option>
+            <option value="Y">Yes!</option>
+            <option value="N">No!</option>
+            <option value="both">Its a complicated relationship</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="radio">
+            <p>Did you drink coffee this morning</p>
+            <label>
+              <input id="coffee" type="radio" name="coffee" value="dark"> Dark Roast
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="coffee" type="radio" name="coffee" value="cream"> Iced Caramel Frappé all day!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="coffee" type="radio" name="coffee" value="water"> I prefer water...
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="speed">How fast are you?
+            <input class="slider-width" id="fast" type="range" min="0" max="100" value="50">
+          </label>
+          <div class="row">
+            <div class="col-6">
+              <p class="text-left">Not very fast</p>
+            </div>
+            <div class="col-6">
+              <p class="text-right">So Fast</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-success" type="submit">Which language?</button>
+      </form>
+    </div>
+  </div>
   
 </body>
 </html>
